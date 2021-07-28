@@ -1,0 +1,95 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.1083; Version 2004; 64bit' Language: 'ja' Physical Memory: 4005 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Owner/Desktop/matsuo
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62215
+Successfully changed project path to: C:/Users/Owner/Desktop/matsuo
+C:/Users/Owner/Desktop/matsuo
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 245.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Owner/Desktop/matsuo/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
+    Vendor:   
+    VRAM:     2002 MB
+    Driver:   24.20.100.6286
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006077 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 79.17 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.990 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002653 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 60.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.224 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.9 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2254.
+Total: 8.350100 ms (FindLiveObjects: 1.245800 ms CreateObjectMapping: 0.200100 ms MarkObjects: 6.425000 ms  DeleteObjects: 0.473000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Animations/walk_14.controller
+  artifactKey: Guid(d04846e3e25899c4585e81149754f39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/walk_14.controller using Guid(d04846e3e25899c4585e81149754f39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136263f08e131e0b8c64c0e498708ab6') in 0.060734 seconds
+  Import took 0.067634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.529335 seconds.
+  path: Assets/Animations/PlayerWalkController.controller
+  artifactKey: Guid(766712be2fe1f2445b80b42f696c07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/PlayerWalkController.controller using Guid(766712be2fe1f2445b80b42f696c07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553fd57e61a5174052a5d8befefe0c08') in 0.062834 seconds
+  Import took 0.261906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 563.608046 seconds.
+  path: Assets/Animations/Player_Walk.anim
+  artifactKey: Guid(ee4652c5350ef9a4893abaa55bc02ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player_Walk.anim using Guid(ee4652c5350ef9a4893abaa55bc02ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb42df278b244984b15b1e858c44de9') in 0.215826 seconds
+  Import took 0.296665 seconds .
+
