@@ -24,8 +24,8 @@ public class Player : MonoBehaviour
     {
         //キー入力されたら行動する
         float horizontalKey = Input.GetAxis("Horizontal");
-        float Vertical = Input.GetAxis("Vertical");
-        Debug.Log(Vertical);
+        float Verticalkey = Input.GetAxis("Vertical");
+
         float xSpeed = 0.0f;
 
         if (horizontalKey > 0)//右
@@ -40,6 +40,13 @@ public class Player : MonoBehaviour
             anim.SetBool("Walk", true);
             xSpeed = -speed;
         }
+        else if (Verticalkey > 0)//上
+        {
+            rb.AddForce(new Vector3(0, 10.0f, 0)); // transform.position = new Vector3(1, 2, 1);
+            anim.SetBool("jump", true);
+            xSpeed = speed;
+        }
+
         else
         {
             anim.SetBool("Walk", false);
