@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             anim.SetBool("Walk", true);
             xSpeed = -speed;
         }
-        else if (Verticalkey > 0)//ã
+        else if (Verticalkey > 0)
         {
             rb.AddForce(new Vector3(0, 10.0f, 0)); // transform.position = new Vector3(1, 2, 1);
             anim.SetBool("jump", true);
