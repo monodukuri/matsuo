@@ -30,14 +30,14 @@ public class Player : MonoBehaviour
 
         if (horizontalKey > 0)//‰E
         {
-            transform.localScale = new Vector3(-1, 1, 1);
-            anim.SetBool("Walk", true);
+            transform.localScale = new Vector3(1, 1, 1);
+            anim.SetBool("run", true);
             xSpeed = speed;
         }
         else if (horizontalKey < 0)//¶
         {
-            transform.localScale = new Vector3(1, 1, 1);
-            anim.SetBool("Walk", true);
+            transform.localScale = new Vector3(-1, 1, 1);
+            anim.SetBool("run", true);
             xSpeed = -speed;
         }
         else if (Verticalkey > 0)
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
 
         else
         {
-            anim.SetBool("Walk", false);
+            anim.SetBool("run", false);
             xSpeed = 0.0f;
         }
         rb.velocity = new Vector2(xSpeed, rb.velocity.y);
