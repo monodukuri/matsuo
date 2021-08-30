@@ -5,11 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //インスペクターで設定する
-    public float speed;
+    public float speed; //速度
+    public float jumpSpeed; //ジャンプ速度
+    public float gravity; //重力
+    public GroundCheck ground; //接地判定
 
     //プライベート変数
     private Animator anim = null;
     private Rigidbody2D rb = null;
+    private bool isGround = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +24,25 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        //接地判定を得る
+        isGround = ground.IsGround();
+
         //キー入力されたら行動する
         float horizontalKey = Input.GetAxis("Horizontal");
-        float Verticalkey = Input.GetAxis("Vertical");
+        float verticalKey = Input.GetAxis("Vertical");
 
         float xSpeed = 0.0f;
+        float ySpeed = -gravity;
+
+        if (isGround)
+        {
+            if (verticalKey > 0)
+            {
+                ySpeed = jumpSpeed;
+            }
+        }
 
         if (horizontalKey > 0)//右
         {
@@ -40,7 +56,7 @@ public class Player : MonoBehaviour
             anim.SetBool("run", true);
             xSpeed = -speed;
         }
-        else if (Verticalkey > 0)
+        else if (verticalKey > 0)
         {
             rb.AddForce(new Vector3(0, 10.0f, 0)); // transform.position = new Vector3(1, 2, 1);
             anim.SetBool("jump", true);
@@ -52,6 +68,8 @@ public class Player : MonoBehaviour
             anim.SetBool("run", false);
             xSpeed = 0.0f;
         }
-        rb.velocity = new Vector2(xSpeed, rb.velocity.y);
+        //修正が必要anim.SetBool("jump", isJump);
+        //anim.SetBool("ground", isGround);
+        rb.velocity = new Vector2(xSpeed, ySpeed);
     }
 }
